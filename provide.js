@@ -62,7 +62,18 @@ var ProvideHtml5 = {
 };
 
 
-
+//added placeholder focus and blur effect
+$.fn.placeholder = function() {
+  return $(this)
+    .focus(function(){
+      if ($(this).val() === $(this).attr('placeholder'))
+        $(this).val('');
+    })
+    .blur(function(){
+      if ($(this).val() === '')
+        $(this).val($(this).attr('placeholder'));
+    }).blur();
+}
 $.fn.forcenumber = function() {
   return $(this).unbind().keyup(function(e) {
 
