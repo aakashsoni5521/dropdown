@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>Testing ProvideHTML5</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/base/jquery-ui.css" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://www.eyecon.ro/colorpicker/css/colorpicker.css" type="text/css" />
+  <script src="http://www.eyecon.ro/colorpicker/js/colorpicker.js"></script>
+  <script src="http://files.farukat.es/js/modernizr-1.1.js"></script>
+  <script src="provide-html5.js"></script>
+  <script>
+    $(function() {  ProvideHtml5.all() })
+  </script>
+  <style>
+    body { background-color: #000; font: 16px calibri, tahoma Helvetica, Arial; color: #fff; }
+  </style>  
+</head>
+<body>
+  <p>Testing…</p>
+  
+  <p> <input autofocus value="autofocus input"> </p>
+  <p> <input placeholder="placeholder" value=""> </p>  
+  <p> <input type="date"> input type="date" </p> 
+  <p> <input type="color"> input type="color" </p>   
+  <p> <input type="number"> Only accepts numbers </p>  
+
+</body>
+</html>
