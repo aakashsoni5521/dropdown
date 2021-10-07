@@ -21,6 +21,24 @@
       color: #fff; 
     }
     
+
+    
+    /*------added focus effects in css----------------*/
+    .input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+
+    
     .form {
   background-color: #15172b;
   border-radius: 20px;
@@ -76,6 +94,7 @@
 .submit:active {
   background-color: #06b;
 }
+
   </style>  
 </head>
 <body>
